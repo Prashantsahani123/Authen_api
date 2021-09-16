@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         apiInterface = APIClient.getClient().create(APIInterface.class);
         Call<JsonObject> call = apiInterface.getallcustomer();
 //        Call<JsonObject> call = apiInterface.gettoken("7666660143","Pass@123","password");
+        //wwewere
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
